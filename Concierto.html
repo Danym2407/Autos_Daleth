@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta charset="UTF-8">
+<title> GELERIA ELON MUSK </title>
+<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<header>
+<div id="nav"> 
+
+    <nav><ul>
+        
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="litros.html">Litros</a></li>
+        <li><a href="cerca.html">Cerca</a></li>
+        <li><a href="cine.html">Cine</a></li>
+        <li><a href="grados.html">Grados</a></li>
+        <li><a href="ecuacion.html">Ecuación</a></li>
+    </ul></nav></div>
+</header>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Raleway:ital,wght@0,200;1,900&display=swap');
+</style>
+<style>@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;1,900&display=swap');</style>
+<h1><br>EJERCICIO 4</h1>
+
+<body>
+
+<div class= "hoja">
+
+<div class="galeria">
+<div class= "foto">
+    <a href="litros.html"><img src="grados/ezra.jpg" alt=""></a></div>
+    <div class="pie">
+    <p>Pago de Litros</p>
+    <p>Calcula el pago del número de litros surtidos a partir el costo de consumo</p>
+    
+    </div>
+ </div>      
+</div>
+<div class= "texto">
+<br><br><br><br>
+    <h1>ENTRADAS DE CONCIERTO</h1>
+    <p>BIENVENIDOS A LA APLICACION</p>
+    <form>
+      Sección A: <input type="int" name="numero1" id="valor1" placeholder="Cant. boletos adulto">
+
+      <br>
+      Sección B: <input type="int" name="numero2" id="valor2" placeholder="Cant. boletos niño" >
+
+      <br>
+    Sección C: <input type="int" name="numero1" id="valor3" placeholder="Precio">
+        
+    <br>
+        Sección D: <input type="int" name="numero1" id="valor4" placeholder="Precio">
+    <br><br>
+        <button type="button" onclick="captura()">Capturar</button>
+    </form>
+    <br>
+    
+    <script>
+        function captura(){
+    var valor1=document.getElementById('valor1').value;
+    var valor2=document.getElementById('valor2').value;
+    var valor3=document.getElementById('valor3').value;
+    var valor4=document.getElementById('valor4').value;
+            
+            var total= (valor1*1000)+(valor2*750)+(valor3*550)+(valor4*380);
+            alert("Total: "+total+"  pesos");
+            var totaldescuento= (total*.95);
+            u= parseInt(valor1);
+            if (u>=10){
+                alert("Tienes un descuento del %5, Tu total a pagar es: "+ totaldescuento)
+                
+            }
+        }
+
+
+
+    
+    </script>
+   </div>
+   
+    
+</body>
+</html>
+

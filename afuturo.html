@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta charset="UTF-8">
+<title> AUTOS DALETH </title>
+<link rel="stylesheet" type="text/css" href="contacto.css">
+</head>
+
+<header >
+		<div id="header">
+            <nav align= "right">
+			<ul class="nav">
+                
+				<li><a href="index.html"><div id="logo">DALETH</div></a></li>
+                
+				<li><a href="ejemplo.html">Modelos</a>
+					<ul>
+						<li><a href="autos.html">Autos</a></li>
+						<li><a href="camionetas.html">Camionetas</a></li>
+						<li><a href="ultmodel.html">Ultimo Modelo</a></li>
+						<li><a href="electricos.html">Electricos</a>
+						</li>
+					</ul>
+				</li>
+                <li><a href="carrito.html">Cotizar</a></li>
+                
+				<li><a href="contacto.html">Contacto</a>
+					<ul>
+						<li><a href="">Correo</a></li>
+						<li><a href="">Instagram</a></li>
+						<li><a href="">Facebook</a></li>
+						<li><a href="">Numero telefonico</a></li>
+					</ul>
+				</li>
+				<li><a href="login.html">Login</a></li>
+                    
+			</ul></nav>
+            <img src="autoos/intro/futurista.jpg" width="100%" height= 500px>
+		</div></header>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Raleway:ital,wght@0,200;1,900&display=swap');
+</style>
+<style>@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;1,900&display=swap');</style>
+    <font color= "white">
+        <br><br><br>
+    <h1 font color= "white">AUTO FUTURISTA</h1>
+    <p align= "center">Comienza con esta grandiosa experiencia</p></font>
+
+<body style="background-color: whitesmoke;">
+<div class= "hoja">
+
+<div class="galeria">
+<div class= "foto">
+    <a href="globos.html"><img src="autoos/futuro.jpg" alt=""></a></div>
+    <div class="pie">
+    
+    <p style="color:black">AUTO FUTURISTA</p>
+    <p style="color:black">Comienza con esta grandiosa experiencia</p>
+    </div>
+ </div>      
+</div>
+
+<div class= "texto" >
+    <font color= "black">
+    
+    <form style="color:black">
+      Modelo: <select name="modelo">
+<option>Año 2022</option>
+<option>Año 2021</option>
+<option>Año 2020</option>
+<option>Año 2019</option>
+</select>
+      <br>
+        
+        Version: <select name="version">
+<option>Rubicon</option>
+<option>Sahara</option>
+</select>
+      <br>
+    
+   Ciudad: <select name="version">
+<option>Rubicon</option>
+<option>Sahara</option>
+</select>
+      <br>
+      <br>
+      Domicilio: <input type="int" name="numero3" id="valor3" placeholder="Calle, Colonia">
+        
+    <br>
+      CCP: <input type="int" name="numero4" id="valor4" placeholder="Codigo Postas">
+    <br>
+        Preferencias: <input type="int" name="numero5" id="valor5" placeholder="Preferencias">
+      <br>
+        Nombre: <input type="int" name="numero6" id="valor6" placeholder="Nombre Completo">
+      <br>
+
+    <br>
+        <br>
+        <button type="button" onclick="captura()">Capturar</button>
+    </form>
+        
+        <label for="emails">¿A quién deseas enviar un correo electrónico?</label>
+<input type="email" multiple name="emails" id="emails" list="drawfemails" required size="64">
+
+        
+        
+        
+    <br>
+        </font>
+    
+    <script>
+                    var y = 13;
+        
+        
+        function captura(){
+    var valor1=document.getElementById('valor1').value;
+    var valor2=document.getElementById('valor2').value;
+    var valor3=document.getElementById('valor3').value;
+    var valor4=document.getElementById('valor4').value;
+    var valor5=document.getElementById('valor5').value;
+    var valor6=document.getElementById('valor6').value;
+            
+            a= parseInt(valor1);
+        b= parseInt(valor2);
+        c= parseInt(valor3);
+        d= parseInt(valor4);
+        f= parseInt(valor5);
+        g= parseInt(valor6);
+  
+            
+        /*if (a>=20){
+    
+                var globos= Math.floor(a/20)*125;
+                var rs= (a%20)*0.78;
+                var globost= globos+rs;
+            
+        }*/
+            var at= a*0.78;
+            var bt= b*30;
+            var ct= c*12;
+            var dt= d*12.5;
+            var ft= f*30;
+            var gt= g*125;
+            
+            var totalfinal= at+bt+ct+dt+ft+gt;
+            alert("TOTAL= "+totalfinal)
+        }
+            
+        
+        
+
+
+
+    
+    </script>
+   </div>
+   
+    
+</body>
+</html>
+
